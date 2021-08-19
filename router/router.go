@@ -18,7 +18,7 @@ func Init() {
 		group.ALL("/user", api.User)
 		group.Group("/", func(group *ghttp.RouterGroup) {
 			group.Middleware(service.Middleware.Auth)
-			group.ALL("/user/profile", api.User.Profile)
+			group.ALL("/user/getUserFromSession", api.User.GetUserFromSession)
 		})
 	})
 	s.Run()

@@ -1,0 +1,73 @@
+2021-08-16 11:34:11.178 [DEBU] [ 24 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-08-16 11:34:11.189 [DEBU] [  9 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test001' 
+2021-08-16 11:35:12.973 [DEBU] [  9 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test001' 
+2021-08-16 11:36:20.500 [DEBU] [  6 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-08-16 11:36:20.502 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test001' 
+2021-08-16 11:36:23.219 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `nickName`='john' 
+2021-08-16 11:36:47.168 [DEBU] [  1 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test001' 
+2021-08-16 11:37:58.258 [DEBU] [  4 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-08-16 11:37:58.261 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test001' 
+2021-08-16 11:38:01.704 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `nickName`='john' 
+2021-08-16 11:38:23.695 [DEBU] [  1 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test001' 
+2021-08-16 11:38:23.695 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `nickName`='john' 
+2021-08-16 11:38:35.226 [DEBU] [  3 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-08-16 11:38:35.227 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test001' 
+2021-08-16 11:38:35.228 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `nickName`='john' 
+2021-08-16 11:38:35.242 [DEBU] [ 14 ms] [default] INSERT INTO `user`(`nickname`,`id`,`passport`,`password`,`create_at`,`update_at`) VALUES('john',0,'test001','123456','2021-08-16 11:38:35','2021-08-16 11:38:35')  
+2021-08-16 11:38:59.672 [DEBU] [  1 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test001' 
+2021-08-16 11:39:01.650 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test001' 
+2021-08-16 11:39:02.531 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test001' 
+2021-08-16 11:39:03.617 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test001' 
+2021-08-16 11:39:04.569 [DEBU] [  1 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test001' 
+2021-08-16 11:39:05.414 [DEBU] [  2 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test001' 
+2021-08-16 11:39:06.424 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test001' 
+2021-08-16 11:40:03.004 [DEBU] [  4 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` WHERE Passport='test001' and Password='123456' LIMIT 1 
+2021-08-16 11:40:03.998 [DEBU] [  0 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` WHERE Passport='test001' and Password='123456' LIMIT 1 
+2021-08-16 11:47:49.373 [DEBU] [  7 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-08-16 11:47:49.374 [DEBU] [  0 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` WHERE `passport`='1233444' LIMIT 1 
+2021-08-16 11:47:51.122 [DEBU] [  1 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` WHERE `passport`='1233444' LIMIT 1 
+2021-08-16 11:47:52.110 [DEBU] [  0 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` WHERE `passport`='1233444' LIMIT 1 
+2021-08-16 11:48:06.115 [DEBU] [  0 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` WHERE `passport`='1233444' LIMIT 1 
+2021-08-16 11:50:11.783 [DEBU] [  8 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-08-16 11:50:11.784 [DEBU] [  0 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` WHERE `passport`='1233444' LIMIT 1 
+2021-08-16 11:50:25.707 [DEBU] [  1 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` WHERE `passport`='1233444' LIMIT 1 
+2021-08-16 11:50:36.727 [DEBU] [  1 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` WHERE `passport`='test001' LIMIT 1 
+2021-08-16 11:51:17.808 [DEBU] [  2 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` WHERE Passport='test001' and Password='123456' LIMIT 1 
+2021-08-16 11:51:54.685 [DEBU] [  7 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` 
+2021-08-16 11:52:43.899 [DEBU] [  8 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test002' 
+2021-08-16 11:52:43.900 [DEBU] [  1 ms] [default] SELECT COUNT(1) FROM `user` WHERE `nickName`='john2' 
+2021-08-16 11:52:43.904 [DEBU] [  4 ms] [default] INSERT INTO `user`(`id`,`passport`,`password`,`create_at`,`update_at`,`nickname`) VALUES(0,'test002','123456','2021-08-16 11:52:43','2021-08-16 11:52:43','john2')  
+2021-08-16 11:52:48.102 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test003' 
+2021-08-16 11:52:48.102 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `nickName`='john3' 
+2021-08-16 11:52:48.105 [DEBU] [  2 ms] [default] INSERT INTO `user`(`nickname`,`id`,`passport`,`password`,`create_at`,`update_at`) VALUES('john3',0,'test003','123456','2021-08-16 11:52:48','2021-08-16 11:52:48')  
+2021-08-16 11:52:52.118 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test004' 
+2021-08-16 11:52:52.119 [DEBU] [  1 ms] [default] SELECT COUNT(1) FROM `user` WHERE `nickName`='john4' 
+2021-08-16 11:52:52.120 [DEBU] [  1 ms] [default] INSERT INTO `user`(`id`,`passport`,`password`,`create_at`,`update_at`,`nickname`) VALUES(0,'test004','123456','2021-08-16 11:52:52','2021-08-16 11:52:52','john4')  
+2021-08-16 11:52:55.706 [DEBU] [  1 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test005' 
+2021-08-16 11:52:55.708 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `nickName`='john5' 
+2021-08-16 11:52:55.709 [DEBU] [  1 ms] [default] INSERT INTO `user`(`passport`,`password`,`create_at`,`update_at`,`nickname`,`id`) VALUES('test005','123456','2021-08-16 11:52:55','2021-08-16 11:52:55','john5',0)  
+2021-08-16 11:52:59.654 [DEBU] [  1 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test006' 
+2021-08-16 11:52:59.654 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `nickName`='john6' 
+2021-08-16 11:52:59.655 [DEBU] [  0 ms] [default] INSERT INTO `user`(`id`,`passport`,`password`,`create_at`,`update_at`,`nickname`) VALUES(0,'test006','123456','2021-08-16 11:52:59','2021-08-16 11:52:59','john6')  
+2021-08-16 11:53:03.618 [DEBU] [  1 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test007' 
+2021-08-16 11:53:03.619 [DEBU] [  1 ms] [default] SELECT COUNT(1) FROM `user` WHERE `nickName`='john7' 
+2021-08-16 11:53:03.621 [DEBU] [  1 ms] [default] INSERT INTO `user`(`create_at`,`update_at`,`nickname`,`id`,`passport`,`password`) VALUES('2021-08-16 11:53:03','2021-08-16 11:53:03','john7',0,'test007','123456')  
+2021-08-16 11:53:07.657 [DEBU] [  1 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test008' 
+2021-08-16 11:53:07.657 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `nickName`='john8' 
+2021-08-16 11:53:07.659 [DEBU] [  1 ms] [default] INSERT INTO `user`(`id`,`passport`,`password`,`create_at`,`update_at`,`nickname`) VALUES(0,'test008','123456','2021-08-16 11:53:07','2021-08-16 11:53:07','john8')  
+2021-08-16 11:53:17.158 [DEBU] [  6 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test009' 
+2021-08-16 11:53:17.159 [DEBU] [  1 ms] [default] SELECT COUNT(1) FROM `user` WHERE `nickName`='john9' 
+2021-08-16 11:53:17.161 [DEBU] [  2 ms] [default] INSERT INTO `user`(`id`,`passport`,`password`,`create_at`,`update_at`,`nickname`) VALUES(0,'test009','123456','2021-08-16 11:53:17','2021-08-16 11:53:17','john9')  
+2021-08-16 11:53:22.308 [DEBU] [  1 ms] [default] SELECT COUNT(1) FROM `user` WHERE `passport`='test0010' 
+2021-08-16 11:53:22.309 [DEBU] [  0 ms] [default] SELECT COUNT(1) FROM `user` WHERE `nickName`='john10' 
+2021-08-16 11:53:22.311 [DEBU] [  2 ms] [default] INSERT INTO `user`(`nickname`,`id`,`passport`,`password`,`create_at`,`update_at`) VALUES('john10',0,'test0010','123456','2021-08-16 11:53:22','2021-08-16 11:53:22')  
+2021-08-16 12:03:24.161 [DEBU] [  5 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-08-16 12:03:24.162 [DEBU] [  0 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` LIMIT 2 OFFSET 0 
+2021-08-16 12:03:33.391 [DEBU] [  1 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` LIMIT 2 OFFSET 4 
+2021-08-16 12:04:37.247 [DEBU] [  3 ms] [default] SHOW FULL COLUMNS FROM `user` 
+2021-08-16 12:04:37.248 [DEBU] [  0 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` LIMIT 2 OFFSET 0 
+2021-08-16 12:04:41.439 [DEBU] [  0 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` LIMIT 2 OFFSET 2 
+2021-08-16 12:04:47.736 [DEBU] [  0 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` LIMIT 2 OFFSET 4 
+2021-08-16 12:04:52.013 [DEBU] [  0 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` LIMIT 2 OFFSET 6 
+2021-08-16 12:04:55.154 [DEBU] [  1 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` LIMIT 2 OFFSET 8 
+2021-08-16 12:04:58.227 [DEBU] [  0 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_at`,`update_at` FROM `user` LIMIT 2 OFFSET 10 

@@ -1,0 +1,187 @@
+2021-08-16 11:25:28.987 [ERRO] invalid handler: defined as "func(ghttp.Request)", but the first input parameter should be type of "context.Context" 
+Stack:
+1.  my-hello/router.Init
+    /Users/xuliang/Documents/go_web_learn/router/router.go:24
+2.  main.main
+    /Users/xuliang/Documents/go_web_learn/main.go:6
+ 
+2021-08-16 11:25:28.987 92985: http server started listening on [:8199] 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE           |                      HANDLER                      |                                MIDDLEWARE                                 
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getUserFromSession | my-hello/app/api.(*userApi).GetUserFromSession-fm | service.(*middlewareService).Ctx-fm,service.(*middlewareService).Auth-fm  
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+ 
+2021-08-16 11:27:26.353 [ERRO] invalid handler: defined as "func(ghttp.Request)", but the first input parameter should be type of "context.Context" 
+Stack:
+1.  my-hello/router.Init
+    /Users/xuliang/Documents/go_web_learn/router/router.go:24
+2.  main.main
+    /Users/xuliang/Documents/go_web_learn/main.go:6
+ 
+2021-08-16 11:27:26.354 93028: http server started listening on [:8199] 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE           |                      HANDLER                      |                                MIDDLEWARE                                 
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getUserFromSession | my-hello/app/api.(*userApi).GetUserFromSession-fm | service.(*middlewareService).Ctx-fm,service.(*middlewareService).Auth-fm  
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+ 
+2021-08-16 11:31:03.299 93067: http server started listening on [:8199] 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE           |                      HANDLER                      |                                MIDDLEWARE                                 
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getUserFromSession | my-hello/app/api.(*userApi).GetUserFromSession-fm | service.(*middlewareService).Ctx-fm,service.(*middlewareService).Auth-fm  
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromdb      | my-hello/app/api.(*userApi).GetUserFromDb         | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromsession | my-hello/app/api.(*userApi).GetUserFromSession    | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/list               | my-hello/app/api.(*userApi).List                  | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/login              | my-hello/app/api.(*userApi).Login                 | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/register           | my-hello/app/api.(*userApi).Register              | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+ 
+2021-08-16 11:36:12.186 93138: http server started listening on [:8199] 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE           |                      HANDLER                      |                                MIDDLEWARE                                 
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getUserFromSession | my-hello/app/api.(*userApi).GetUserFromSession-fm | service.(*middlewareService).Ctx-fm,service.(*middlewareService).Auth-fm  
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromdb      | my-hello/app/api.(*userApi).GetUserFromDb         | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromsession | my-hello/app/api.(*userApi).GetUserFromSession    | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/list               | my-hello/app/api.(*userApi).List                  | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/login              | my-hello/app/api.(*userApi).Login                 | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/register           | my-hello/app/api.(*userApi).Register              | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+ 
+2021-08-16 11:37:52.405 93172: http server started listening on [:8199] 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE           |                      HANDLER                      |                                MIDDLEWARE                                 
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getUserFromSession | my-hello/app/api.(*userApi).GetUserFromSession-fm | service.(*middlewareService).Ctx-fm,service.(*middlewareService).Auth-fm  
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromdb      | my-hello/app/api.(*userApi).GetUserFromDb         | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromsession | my-hello/app/api.(*userApi).GetUserFromSession    | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/list               | my-hello/app/api.(*userApi).List                  | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/login              | my-hello/app/api.(*userApi).Login                 | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/register           | my-hello/app/api.(*userApi).Register              | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+ 
+2021-08-16 11:38:30.733 93202: http server started listening on [:8199] 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE           |                      HANDLER                      |                                MIDDLEWARE                                 
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getUserFromSession | my-hello/app/api.(*userApi).GetUserFromSession-fm | service.(*middlewareService).Ctx-fm,service.(*middlewareService).Auth-fm  
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromdb      | my-hello/app/api.(*userApi).GetUserFromDb         | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromsession | my-hello/app/api.(*userApi).GetUserFromSession    | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/list               | my-hello/app/api.(*userApi).List                  | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/login              | my-hello/app/api.(*userApi).Login                 | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/register           | my-hello/app/api.(*userApi).Register              | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+ 
+2021-08-16 11:47:32.382 93282: http server started listening on [:8199] 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE           |                      HANDLER                      |                                MIDDLEWARE                                 
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getUserFromSession | my-hello/app/api.(*userApi).GetUserFromSession-fm | service.(*middlewareService).Ctx-fm,service.(*middlewareService).Auth-fm  
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromdb      | my-hello/app/api.(*userApi).GetUserFromDb         | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromsession | my-hello/app/api.(*userApi).GetUserFromSession    | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/list               | my-hello/app/api.(*userApi).List                  | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/login              | my-hello/app/api.(*userApi).Login                 | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/register           | my-hello/app/api.(*userApi).Register              | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+ 
+2021-08-16 11:49:52.655 93323: http server started listening on [:8199] 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE           |                      HANDLER                      |                                MIDDLEWARE                                 
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getUserFromSession | my-hello/app/api.(*userApi).GetUserFromSession-fm | service.(*middlewareService).Ctx-fm,service.(*middlewareService).Auth-fm  
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromdb      | my-hello/app/api.(*userApi).GetUserFromDb         | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromsession | my-hello/app/api.(*userApi).GetUserFromSession    | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/list               | my-hello/app/api.(*userApi).List                  | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/login              | my-hello/app/api.(*userApi).Login                 | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/register           | my-hello/app/api.(*userApi).Register              | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+ 
+2021-08-16 12:02:07.472 93408: http server started listening on [:8199] 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE           |                      HANDLER                      |                                MIDDLEWARE                                 
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getUserFromSession | my-hello/app/api.(*userApi).GetUserFromSession-fm | service.(*middlewareService).Ctx-fm,service.(*middlewareService).Auth-fm  
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromdb      | my-hello/app/api.(*userApi).GetUserFromDb         | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromsession | my-hello/app/api.(*userApi).GetUserFromSession    | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/list               | my-hello/app/api.(*userApi).List                  | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/login              | my-hello/app/api.(*userApi).Login                 | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/pagelist           | my-hello/app/api.(*userApi).PageList              | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/register           | my-hello/app/api.(*userApi).Register              | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+ 
+2021-08-16 12:03:18.499 93446: http server started listening on [:8199] 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE           |                      HANDLER                      |                                MIDDLEWARE                                 
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getUserFromSession | my-hello/app/api.(*userApi).GetUserFromSession-fm | service.(*middlewareService).Ctx-fm,service.(*middlewareService).Auth-fm  
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromdb      | my-hello/app/api.(*userApi).GetUserFromDb         | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromsession | my-hello/app/api.(*userApi).GetUserFromSession    | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/list               | my-hello/app/api.(*userApi).List                  | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/login              | my-hello/app/api.(*userApi).Login                 | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/pagelist           | my-hello/app/api.(*userApi).PageList              | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/register           | my-hello/app/api.(*userApi).Register              | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+ 
+2021-08-16 12:04:28.200 93480: http server started listening on [:8199] 
+
+  SERVER  | DOMAIN  | ADDRESS | METHOD |          ROUTE           |                      HANDLER                      |                                MIDDLEWARE                                 
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getUserFromSession | my-hello/app/api.(*userApi).GetUserFromSession-fm | service.(*middlewareService).Ctx-fm,service.(*middlewareService).Auth-fm  
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromdb      | my-hello/app/api.(*userApi).GetUserFromDb         | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/getuserfromsession | my-hello/app/api.(*userApi).GetUserFromSession    | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/list               | my-hello/app/api.(*userApi).List                  | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/login              | my-hello/app/api.(*userApi).Login                 | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/pagelist           | my-hello/app/api.(*userApi).PageList              | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+  default | default | :8199   | ALL    | /user/register           | my-hello/app/api.(*userApi).Register              | service.(*middlewareService).Ctx-fm                                       
+----------|---------|---------|--------|--------------------------|---------------------------------------------------|---------------------------------------------------------------------------
+ 

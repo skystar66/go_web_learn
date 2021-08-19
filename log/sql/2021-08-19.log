@@ -1,0 +1,17 @@
+2021-08-19 14:21:31.363 [DEBU] [  4 ms] [default] SHOW FULL COLUMNS FROM `userconv` 
+2021-08-19 14:21:31.376 [ERRO] [ 12 ms] [default] INSERT INTO `userconv`(`id`,`passport`,`password`,`nickname`) VALUES(0,'user_0','pass_0','name_0'),(1,'user_1','pass_1','name_1'),(2,'user_2','pass_2','name_2'),(3,'user_3','pass_3','name_3'),(4,'user_4','pass_4','name_4'),(5,'user_5','pass_5','name_5'),(6,'user_6','pass_6','name_6'),(7,'user_7','pass_7','name_7'),(8,'user_8','pass_8','name_8'),(9,'user_9','pass_9','name_9') 
+Error: Error 1062: Duplicate entry '1' for key 'PRIMARY' 
+Stack:
+1.  main.main
+    /Users/xuliang/Documents/go_web_learn/test/unmarshalValueTest.go:55
+ 
+2021-08-19 14:22:50.833 [DEBU] [  2 ms] [default] SHOW FULL COLUMNS FROM `userconv` 
+2021-08-19 14:22:50.835 [DEBU] [  1 ms] [default] INSERT INTO `userconv`(`id`,`passport`,`password`,`nickname`) VALUES(1,'user_1','pass_1','name_1'),(2,'user_2','pass_2','name_2'),(3,'user_3','pass_3','name_3'),(4,'user_4','pass_4','name_4'),(5,'user_5','pass_5','name_5'),(6,'user_6','pass_6','name_6'),(7,'user_7','pass_7','name_7'),(8,'user_8','pass_8','name_8'),(9,'user_9','pass_9','name_9'),(10,'user_10','pass_10','name_10')  
+2021-08-19 14:22:50.835 [DEBU] [  0 ms] [default] SELECT `id`,`passport`,`password`,`nickname`,`create_time` FROM `userconv` ORDER BY `id` desc 
+2021-08-19 14:23:14.688 [DEBU] [  1 ms] [default] SHOW FULL COLUMNS FROM `userconv` 
+2021-08-19 14:23:14.690 [ERRO] [  1 ms] [default] INSERT INTO `userconv`(`id`,`passport`,`password`,`nickname`) VALUES(1,'user_1','pass_1','name_1'),(2,'user_2','pass_2','name_2'),(3,'user_3','pass_3','name_3'),(4,'user_4','pass_4','name_4'),(5,'user_5','pass_5','name_5'),(6,'user_6','pass_6','name_6'),(7,'user_7','pass_7','name_7'),(8,'user_8','pass_8','name_8'),(9,'user_9','pass_9','name_9'),(10,'user_10','pass_10','name_10') 
+Error: Error 1062: Duplicate entry '1' for key 'PRIMARY' 
+Stack:
+1.  main.main
+    /Users/xuliang/Documents/go_web_learn/test/unmarshalValueTest.go:55
+ 
