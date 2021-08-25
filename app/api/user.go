@@ -6,6 +6,7 @@ import (
 	"github.com/gogf/gf/util/gconv"
 	"my-hello/app/module"
 	"my-hello/app/service"
+	"my-hello/app/utils"
 	"my-hello/library/response"
 )
 
@@ -82,10 +83,10 @@ func (receiver *userApi) Login(r *ghttp.Request) {
 //@router /user/profile [GET]
 // @success 200 {object} model.User "用户信息"
 func (receiver *userApi) GetUserFromDb(r *ghttp.Request) {
-	passport:=r.GetString("passport")
-	if userDb := service.User.GetUserFromDb(passport);userDb!=nil{
+	passport := r.GetString("passport")
+	if userDb := service.User.GetUserFromDb(passport); userDb != nil {
 		response.JsonExit(r, 200, "success", userDb)
-	}else {
+	} else {
 		response.JsonExit(r, 1, errors.New("账号不存在").Error())
 	}
 }
@@ -116,8 +117,33 @@ func (receiver *userApi) List(r *ghttp.Request) {
 //@router /user/list [GET]
 // @success 200 {object} model.User "用户信息"
 func (receiver *userApi) PageList(r *ghttp.Request) {
-	page:=r.GetInt("page")
-	limit:=r.GetInt("limit")
-	userLists := service.User.PageList(page,limit)
+	page := r.GetInt("page")
+	limit := r.GetInt("limit")
+	userLists := service.User.PageList(page, limit)
 	response.JsonExit(r, 200, "success", userLists)
+}
+
+func (receiver *userApi) RedisSet(r *ghttp.Request) {
+	if err := service.RedisService.SetVal(r.GetString("key"), r.GetString("value")); err != nil {
+		response.JsonExit(r, 500, "error", err.Error())
+	} else {
+		response.JsonExit(r, 200, "success")
+	}
+}
+
+func (receiver *userApi) RedisGet(r *ghttp.Request) {
+	value := service.RedisService.GetVal(r.GetString("key"))
+	response.JsonExit(r, 200, "success", value)
+}
+
+func (receiver *userApi) HighRedisSet(r *ghttp.Request) {
+	if err := utils.RediApi.Set(r.GetString("key"), r.GetString("value")); err != nil {
+		response.JsonExit(r, 500, "error", err.Error())
+	} else {
+		response.JsonExit(r, 200, "success")
+	}
+}
+func (receiver *userApi) HighRedisGet(r *ghttp.Request) {
+	value := utils.RediApi.Get(r.GetString("key"))
+	response.JsonExit(r, 200, "success", value)
 }

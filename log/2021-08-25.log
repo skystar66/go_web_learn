@@ -1,0 +1,6 @@
+2021-08-25 14:52:08.579 [INFO] Redis Set key: test1-key value: test1-value 
+2021-08-25 14:52:18.774 [INFO] Redis Get key: test1-key value: test1-value 
+2021-08-25 14:53:00.928 [INFO] High Redis Init Success! group : test 
+2021-08-25 14:53:49.461 [INFO] High Redis Init Success! group : test 
+2021-08-25 14:54:00.600 [INFO] High Redis Set key: test2-key value: test2-value 
+2021-08-25 14:54:05.002 [INFO] High Redis Get key: test2-key value: test2-value 

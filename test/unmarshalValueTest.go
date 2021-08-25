@@ -18,13 +18,13 @@ type User struct {
 	CreateTime *gtime.Time
 }
 
-func (user *User) UnmarshalValue(value interface{})  error{
-	if record,ok:=value.(gdb.Record);ok{
-		*user=User{
-			Id: record["id"].Int(),
-			Passport: record["passport"].String(),
-			Password: record["password"].String(),
-			Nickname: record["nickname"].String(),
+func (user *User) UnmarshalValue(value interface{}) error {
+	if record, ok := value.(gdb.Record); ok {
+		*user = User{
+			Id:         record["id"].Int(),
+			Passport:   record["passport"].String(),
+			Password:   record["password"].String(),
+			Nickname:   record["nickname"].String(),
 			CreateTime: record["create_time"].GTime(),
 		}
 		return nil
@@ -33,37 +33,28 @@ func (user *User) UnmarshalValue(value interface{})  error{
 }
 
 func main() {
-
-
 	var (
-		err error
+		err   error
 		users []*User
 	)
-
-	
 	//创建数组
-	array:=garray.New(true)
+	array := garray.New(true)
 	for i := 1; i <= 10; i++ {
 		array.Append(g.Map{
-			"id":          i,
-			"passport":    fmt.Sprintf(`user_%d`, i),
-			"password":    fmt.Sprintf(`pass_%d`, i),
-			"nickname":    fmt.Sprintf(`name_%d`, i),
+			"id":       i,
+			"passport": fmt.Sprintf(`user_%d`, i),
+			"password": fmt.Sprintf(`pass_%d`, i),
+			"nickname": fmt.Sprintf(`name_%d`, i),
 		})
 	}
 	//写入数据
-	if _,err:=g.DB().Model("userconv").Data(array).Insert();err!=nil{
+	if _, err := g.DB().Model("userconv").Data(array).Insert(); err != nil {
 		panic(err)
 	}
 	//查询数据
-	err=g.DB().Model("userconv").Order("id asc").Scan(&users)
+	err = g.DB().Model("userconv").Order("id asc").Scan(&users)
 	if err != nil {
 		panic(err)
 	}
 	g.Dump(users)
 }
-
-
-
-
-
