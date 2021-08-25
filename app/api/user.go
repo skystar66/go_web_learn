@@ -125,7 +125,7 @@ func (receiver *userApi) PageList(r *ghttp.Request) {
 
 func (receiver *userApi) RedisSet(r *ghttp.Request) {
 	if err := service.RedisService.SetVal(r.GetString("key"), r.GetString("value")); err != nil {
-		response.JsonExit(r, 500, "error", err.Error())
+		response.JsonExit(r, -1, "error", err.Error())
 	} else {
 		response.JsonExit(r, 200, "success")
 	}
@@ -133,6 +133,38 @@ func (receiver *userApi) RedisSet(r *ghttp.Request) {
 
 func (receiver *userApi) RedisGet(r *ghttp.Request) {
 	value := service.RedisService.GetVal(r.GetString("key"))
+	response.JsonExit(r, 200, "success", value)
+}
+
+func (receiver *userApi) RedisHSet(r *ghttp.Request) {
+	if err := service.RedisService.Hset(r.GetString("key"), r.GetString("value")); err != nil {
+		response.JsonExit(r, -1, "error", err.Error())
+	} else {
+		response.JsonExit(r, 200, "success")
+	}
+}
+
+func (receiver *userApi) RedisHGet(r *ghttp.Request) {
+	value := service.RedisService.HgetAll()
+	response.JsonExit(r, 200, "success", value)
+}
+
+func (receiver *userApi) RedisHMSet(r *ghttp.Request) {
+	//var reqMap g.Map
+	//if err := r.Parse(&reqMap); err != nil {
+	//	response.JsonExit(r,-1,errors.New("map类型转换失败！").Error())
+	//	return
+	//}
+	//reqMap:=r.Get("map")
+	reqMap:=r.GetVar("map").Map()
+	if err := service.RedisService.HMset(reqMap); err != nil {
+		response.JsonExit(r, 500, "error", err.Error())
+	} else {
+		response.JsonExit(r, 200, "success")
+	}
+}
+func (receiver *userApi) RedisHMGet(r *ghttp.Request) {
+	value := service.RedisService.HMget(r.GetString("key"))
 	response.JsonExit(r, 200, "success", value)
 }
 

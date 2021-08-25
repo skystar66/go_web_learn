@@ -1,0 +1,22 @@
+2021-08-25 15:39:12.606 500 "GET http 127.0.0.1:8199 /user/redishget?key=test1-key HTTP/1.1" 0.000, 127.0.0.1, "", "PostmanRuntime/7.28.1"
+Stack:
+1. ERR wrong number of arguments for 'hget' command
+   1).  my-hello/app/service.redisModel.HgetAll
+    	/Users/xuliang/Documents/go_web_learn/app/service/redis.go:44
+   2).  my-hello/app/api.(*userApi).RedisHGet
+    	/Users/xuliang/Documents/go_web_learn/app/api/user.go:149
+   3).  my-hello/app/service.(*middlewareService).Ctx
+    	/Users/xuliang/Documents/go_web_learn/app/service/middleware.go:30
+2. ERR wrong number of arguments for 'hget' command
+ 
+2021-08-25 15:41:05.068 500 "GET http 127.0.0.1:8199 /user/redishmset HTTP/1.1" 0.001, 127.0.0.1, "", "PostmanRuntime/7.28.1"
+Stack:
+1. ERR wrong number of arguments for 'hmset' command
+   1).  my-hello/app/service.(*redisModel).HMset
+    	/Users/xuliang/Documents/go_web_learn/app/service/redis.go:54
+   2).  my-hello/app/api.(*userApi).RedisHMSet
+    	/Users/xuliang/Documents/go_web_learn/app/api/user.go:159
+   3).  my-hello/app/service.(*middlewareService).Ctx
+    	/Users/xuliang/Documents/go_web_learn/app/service/middleware.go:30
+2. ERR wrong number of arguments for 'hmset' command
+ 

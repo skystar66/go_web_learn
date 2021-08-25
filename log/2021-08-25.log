@@ -4,3 +4,16 @@
 2021-08-25 14:53:49.461 [INFO] High Redis Init Success! group : test 
 2021-08-25 14:54:00.600 [INFO] High Redis Set key: test2-key value: test2-value 
 2021-08-25 14:54:05.002 [INFO] High Redis Get key: test2-key value: test2-value 
+2021-08-25 15:32:43.847 [INFO] High Redis Init Success! group : test 
+2021-08-25 15:39:02.212 [INFO] High Redis Init Success! group : test 
+2021-08-25 15:39:08.611 [INFO] Redis hset key: test1-key value: test1-value 
+2021-08-25 15:39:12.606 [INFO] Redis hget key: cache_map_key value: map[] 
+2021-08-25 15:39:26.154 [INFO] High Redis Init Success! group : test 
+2021-08-25 15:39:32.465 [INFO] Redis hget key: cache_map_key value: map[test1-key:test1-value] 
+2021-08-25 15:41:05.068 [INFO] Redis hmset key: cache_mulit_map_key value: map[] 
+2021-08-25 15:45:45.777 [INFO] High Redis Init Success! group : test 
+2021-08-25 15:55:50.006 [INFO] High Redis Init Success! group : test 
+2021-08-25 15:57:43.090 [INFO] High Redis Init Success! group : test 
+2021-08-25 16:00:00.593 [INFO] High Redis Init Success! group : test 
+2021-08-25 16:00:04.602 [INFO] Redis hmset key: cache_mulit_map_key value: map[test1:test1 test2:test2 test3:test3 test4:test4] 
+2021-08-25 16:00:54.356 [INFO] Redis hmget key: test1 value: [test1] 
